@@ -1,11 +1,12 @@
 {
-  "name": "web-30-project",
+  "name": "web-39-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "foo": "echo foo"
   },
   "keywords": [],
   "author": "",
