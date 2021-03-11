@@ -1,8 +1,5 @@
 require("dotenv").config();
 const path = require("path");
-
-console.log("web 39 rulez big time!");
-
 const express = require("express");
 
 const server = express();
@@ -25,7 +22,7 @@ server.get("/api/hello", (req, res) => {
 
 // catch-all that just sends back index.html
 server.get("*", (req, res) => {
-  res.send(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
 const PORT = process.env.PORT || 4000;
